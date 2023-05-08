@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import viteLogo from '/vite.svg';
 import './App.css'
 import AllCountries from './assets/AllCountries/AllCountries';
 import CountryInfo from './assets/CountryInfo/CountryInfo';

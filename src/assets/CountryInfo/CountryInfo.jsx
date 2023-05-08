@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { apiURL } from "../util/api";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { apiURL } from '../util/Api';
+import { Link } from 'react-router-dom';
 
 const CountryInfo = () => {
   const [country, setCountry] = useState([]);
@@ -17,7 +17,7 @@ const CountryInfo = () => {
       try {
         const res = await fetch(`${apiURL}/name/${countryName}`);
 
-        if (!res.ok) throw new Error("Could not found!");
+        if (!res.ok) throw new Error("Not found!");
 
         const data = await res.json();
 
