@@ -29,22 +29,6 @@ const AllCountries = () => {
     }
   };
 
-  const getCountryByName = async (countryName) => {
-    try {
-      const res = await fetch(`${apiURL}/name/${countryName}`);
-
-      if (!res.ok) throw new Error("Not found any country!");
-
-      const data = await res.json();
-      setCountries(data);
-
-      setIsLoading(false);
-    } catch (error) {
-      setIsLoading(false);
-      setError(error.message);
-    }
-  };
-
   const getCountryByRegion = async (regionName) => {
     try {
       const res = await fetch(`${apiURL}/region/${regionName}`);
