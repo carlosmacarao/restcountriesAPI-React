@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 
-const DownloadPdf = ({  }) => {
+function DownloadPdf () {
   
-
-  const downloadPdf = () => {
   
-  };
-
   return (
     <>
+     <a href='carlos-macarao-cv-pt.pdf' download="carlos-macarao-cv-pt.pdf">
+      
       <input
         type="button"
         value="Download PDF"
-        onClick={downloadPdf}
+        
+        className='down_button'
       />
+     </a> 
     </>
   );
 };
