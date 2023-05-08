@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { apiURL } from "../util/api";
 
-import SearchInput from "../Search/SearchInput";
+import SearchInput from "../DownloadPdf/DownloadPdf";
 import FilterCountry from "../FilterCountry/FilterCountry";
 
 import { Link } from "react-router-dom";
+import DownloadPdf from "../DownloadPdf/DownloadPdf";
 
 const AllCountries = () => {
   const [countries, setCountries] = useState([]);
@@ -69,8 +70,8 @@ const AllCountries = () => {
   return (
     <div className="all__country__wrapper">
       <div className="country__top">
-        <div className="search">
-          <SearchInput onSearch={getCountryByName} />
+        <div className="download">
+          <DownloadPdf />
         </div>
 
         <div className="filter">
