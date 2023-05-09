@@ -62,7 +62,7 @@ const AllCountries = () => {
       </div>
 
       <div className="country__bottom">
-        {isLoading && !error && <h4>Loading........</h4>}
+        {isLoading && !error && <h4>Loading...</h4>}
         {error && !isLoading && <h4>{error}</h4>}
 
         {countries?.map((country) => (

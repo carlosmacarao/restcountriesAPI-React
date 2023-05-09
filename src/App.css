@@ -114,6 +114,7 @@ select {
   padding: 10px 25px;
   background: #52796f;
   margin-bottom: 50px;
+  margin-right: 12px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -170,14 +171,15 @@ a {
   font-weight: 400;
 }
 
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
   
   .container {
-    display: flex;
     width: 100%;
     
   }  
 
+  
   
 }
